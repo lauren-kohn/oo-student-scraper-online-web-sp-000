@@ -14,7 +14,7 @@ class Scraper
       student_hash["location"] = student.css("student-location").text
       #student_hash["profile_url"] = student.css("a")["href"]
     end
-    student_hash
+    puts student_hash
   end
   
   def self.scrape_profile_page(profile_url)
