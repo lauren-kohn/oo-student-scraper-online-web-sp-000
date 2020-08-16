@@ -10,9 +10,9 @@ class Student
   end
 
   def self.create_from_collection(students_array)
-    students_array.each do |person, data|
-      binding.pry
-      data.each do |key, value|
+    students_array.each do |person|
+      person.each do |key, value|
+        binding.pry
         value.each do |a, b|
         
         end
