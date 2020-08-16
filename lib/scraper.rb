@@ -14,7 +14,6 @@ class Scraper
       student_array[:name] = student.css("student-name").text
       student_array[:location] = student.css("student-location").text
       student_array[:profile_url] = student.css("a")["href"]
-      
     end
     puts student_array
   end
