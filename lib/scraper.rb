@@ -12,7 +12,7 @@ class Scraper
       #student = Student.new 
       student_hash["name"] = student.css("student-name").text
       student_hash["location"] = student.css("student-location").text
-      #student_hash["profile_url"] = student.css("a")["href"]
+      student_hash["profile_url"] = student.css("a")["href"]
     end
     puts student_hash
   end
