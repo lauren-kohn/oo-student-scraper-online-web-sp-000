@@ -11,7 +11,7 @@ class Student
 
   def self.create_from_collection(students_array)
     students_array.each do |student|
-      student.each do |k, v|
+      student.each do |key, value|
         binding.pry
         self.send(("#{key}="), value)
       end
