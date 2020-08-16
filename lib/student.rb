@@ -12,8 +12,7 @@ class Student
   def self.create_from_collection(students_array)
     students_array.each do |student|
       student.each do |k, v|
-        key = :name 
-        @location = :location
+        self.send(("#{key}="), value
         binding.pry
       end
     end
