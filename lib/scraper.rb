@@ -5,10 +5,11 @@ require 'pry'
 class Scraper
   
   def self.scrape_index_page(index_url)
+    student_array = []
     students = Nokogiri::HTML(open(index_url))
     students.css("div.student-card").each do |student|
       binding.pry
-      student_array = []
+      
       #student = Student.new 
       student_array[:name] = student.css("student-name").text
       student_array[:location] = student.css("student-location").text
