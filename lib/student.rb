@@ -11,7 +11,7 @@ class Student
 
   def self.create_from_collection(students_array)
     students_array.each do |key, value|
-      @name = :name 
+      :name 
       @location = :location
       binding.pry
     end
