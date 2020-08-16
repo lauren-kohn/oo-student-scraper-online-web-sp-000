@@ -25,7 +25,7 @@ class Scraper
       x.attribute("href").value
     end 
     links.each do |link|
-      if link.include?
+      if link.include?("linkedin")
     
   end
 
