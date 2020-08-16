@@ -12,6 +12,7 @@ class Scraper
       hash = { :name = student.css("student-name").text
                :location = student.css("student-location").text
                :profile_url = student.css("a")["href"]
+      }
     end
     puts student_array
   end
