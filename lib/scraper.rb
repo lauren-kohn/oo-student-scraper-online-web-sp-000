@@ -6,7 +6,6 @@ class Scraper
   
   def self.scrape_index_page(index_url)
     students = Nokogiri::HTML(open('https://learn-co-curriculum.github.io/student-scraper-test-page/index.html'))
-    #binding.pry
     students.css("div.student-card").each do |student|
       binding.pry
       student_array = []
