@@ -8,7 +8,6 @@ class Scraper
     student_array = []
     doc = Nokogiri::HTML(open(index_url))
     students.css("div.student-card").each do |student|
-      binding.pry
       
       #student = Student.new 
       student_array[:name] = student.css("student-name").text
