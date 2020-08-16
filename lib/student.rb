@@ -11,8 +11,8 @@ class Student
 
   def self.create_from_collection(students_array)
     students_array.each do |student|
-      student.name = :name 
-      student.location = :location
+      @name = :name 
+      @location = :location
     end
   end
 
