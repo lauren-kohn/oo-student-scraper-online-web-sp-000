@@ -5,7 +5,7 @@ require 'pry'
 class Scraper
   
   def self.scrape_index_page(index_url)
-    student_hash = {}
+    student_hash = []
     students = Nokogiri::HTML(open('https://learn-co-curriculum.github.io/student-scraper-test-page/index.html'))
     #binding.pry
     students.css("div.student-card").each do |student|
