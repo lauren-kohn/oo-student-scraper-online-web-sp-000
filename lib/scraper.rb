@@ -27,10 +27,14 @@ class Scraper
     links.each do |link|
       if link.include?("linkedin")
         
-      elsif link.include?("")
+      elsif link.include?("github")
         
-      elsif link.include?("linkedin")
+      elsif link.include?("twitter")
+      
+      else 
     
+      end
+    end
   end
 
 end
