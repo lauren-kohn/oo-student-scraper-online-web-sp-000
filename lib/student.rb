@@ -15,6 +15,7 @@ class Student
         key = :name 
         @location = :location
         binding.pry
+      end
     end
   end
 
