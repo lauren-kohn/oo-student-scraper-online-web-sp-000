@@ -10,7 +10,7 @@ class Scraper
     students = doc.css(".student-card")
     students.each do |student|
       hash = { name: student.css(".card-text-container").text,
-               location: student.css("student-location").text,
+               location: student.css(".card-text-container").text,
                profile_url: "#{student.css("a")[0]["href"]}"
       }
       student_array << hash
