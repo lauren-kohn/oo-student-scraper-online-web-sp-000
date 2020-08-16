@@ -13,6 +13,7 @@ class Student
     students_array.each do |student|
       @name = :name 
       @location = :location
+      binding.pry
     end
   end
 
