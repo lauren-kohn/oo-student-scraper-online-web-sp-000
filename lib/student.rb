@@ -10,10 +10,11 @@ class Student
   end
 
   def self.create_from_collection(students_array)
-    students_array.each do |key, value|
-      :name 
-      @location = :location
-      binding.pry
+    students_array.each do |student|
+      student.each do |k, v|
+        key = :name 
+        @location = :location
+        binding.pry
     end
   end
 
